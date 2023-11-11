@@ -1,0 +1,133 @@
+
+    :root{
+
+    /*(sub-heading at the top of the app UI)*/
+    --Pale_Violet: hsl(276, 100%, 81%);
+
+    /*(chat on the left)*/
+    --Moderate_Violet: hsl(276, 55%, 52%);
+
+    /* (chat on the right)*/
+    --Desaturated_Dark_Violet: hsl(271, 15%, 43%);
+
+    /* (placeholder text)*/
+    --Grayish_Blue: hsl(206, 6%, 79%);
+
+    /* (main heading)*/
+    --Very_Dark_Desaturated_Violet: hsl(271, 36%, 24%);
+
+    /*(paragraph)*/
+    --Dark_Grayish_Violet: hsl(270, 7%, 64%);
+
+    /*#### Gradients
+
+    These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:*/
+
+    --Light_Magenta: rgb(233, 66, 255);
+    --Light_Violet: rgb(136, 56, 255);
+
+    /*### Secondary*/
+
+    --White: hsl(0, 0%, 100%);
+
+    /*(app background)*/
+    --Light_Grayish_Violet: hsl(270, 20%, 96%);
+
+    /* (submit button background)*/
+    --Very_Dark_Desaturated_Violet: hsl(271, 36%, 24%);
+
+    /* (radio button outline)*/
+    --Very_Light_Magenta: hsl(289, 100%, 72%);
+
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    .container-main{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* inicio da section one */
+
+    .container-main .design-one{
+        position: fixed;
+        top: 0;
+        left: -50px;
+        width: 400px;
+        height: 580px;
+        border-radius: 0 0 200px 200px;
+        background: rgb(233,66,255);
+        background: linear-gradient(200deg, rgba(233,66,255,1) 2%, rgba(136,56,255,1) 52%); 
+    }
+
+    /* fim da section one */
+
+    /*inicio da section two */
+
+    .container-main .design-two{
+        position: fixed;
+        bottom: 0;
+        right: -80px;
+        width: 360px;
+        height: 540px;
+        border-radius: 200px 200px  0 0 ;
+        background: hsla(264, 6%, 83%, 0.37);
+    }
+
+    /*fim da section two */
+
+    /*inicio da container */
+
+    .container-main .container{
+        /*border: 1px solid #000;*/
+        width: 70%;
+        height: 460px;
+        z-index: 5;
+        display: inline-block;
+    }
+
+    .container-main .container .phone{
+        width: 270px;
+        height: 450px;
+        border-radius: 30px;
+        background-color: #fff;
+        box-shadow: var(--box-shadow);
+        padding: 10px;
+    }
+
+    .container-main .container .phone .phone-content{
+        width: 100%;
+        height: 100%;
+        background-color: hsl(270, 20%, 96%);
+        border-radius: 25px;
+        overflow: hidden;
+    }
+
+    .container-main .container .phone .phone-content .phone-nav{
+        width: 100%;
+        height: 70px;
+        border-radius: 5px;
+        background: rgb(233,66,255);
+        background: linear-gradient(250deg, rgba(233,66,255,1) 15%, rgba(136,56,255,1) 65%); 
+    }
+    .container-main .container .phone .phone-content .phone-audio{
+        width: 60%;
+        height: 18px;
+        background-color: #fff;
+        border-radius: 0 0 30px 30px;
+        box-shadow: var(--box-shadow);
+        margin: 0 auto;
+    }
+
+    /*fim da container */
