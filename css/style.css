@@ -90,11 +90,28 @@
     /*inicio da container */
 
     .container-main .container{
-        border: 1px solid #000;
+        /*border: 1px solid #000;*/
         width: 80%;
         height: 550px;
         z-index: 5;
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 0 0 0 11%;
+    }
+    @media (max-width:1110px) {
+        .container-main .container{
+            padding: 0;
+        }
+    }
+    @media (max-width:870px) {
+        .container-main .container{
+            padding: 0;
+            display: block;
+        }
+        .container-main .container .phone{
+            margin: 0 auto;
+        }
     }
 
     .container-main .container .phone{
@@ -305,3 +322,34 @@
     }
 
     /*fim da message */
+
+
+    /*inicio do text */
+    .text{
+        width: 520px;
+        height: auto;
+        padding: 20px;
+        /*background-color: red;*/
+        margin-left: 40px;
+    }
+    .text h1{
+        margin-bottom: 22px;
+        color: hsl(271, 36%, 24%);
+    }
+    .text br{
+        margin-bottom: 6px;
+    }
+    .text p{
+        color: hsl(270, 7%, 64%);
+    }
+
+    @media (max-width:870px) {
+        .text{
+            margin: 0 auto;
+            /*border: 1px solid ;*/
+            width: 100%;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+    /*fim do text */
